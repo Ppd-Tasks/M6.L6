@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content">
+
+<LinearLayout
+    android:id="@+id/view_background"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    android:orientation="horizontal"
+    android:background="@color/black"
+    android:gravity="end"
+    android:padding="2.5dp"
+    android:layout_margin="5dp">
+    <LinearLayout
+        android:id="@+id/linearUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:background="@color/white">
+        <ImageView
+            android:layout_width="49dp"
+            android:layout_height="49dp"
+
+            android:layout_gravity="center" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:textColor="#FF69C80A"
+            android:textSize="20sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:background="@color/white">
+        <ImageView
+            android:layout_width="49dp"
+            android:layout_height="49dp"
+
+            android:layout_gravity="center" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:textColor="#E53935"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/view_foreground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:padding="2.5dp"
+        android:layout_margin="5dp"
+        android:background="@color/black">
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textSize="25dp"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:background="@color/white"
+                    android:padding="5dp"
+                    android:layout_marginBottom="0.4dp"/>
+                <TextView
+                    android:id="@+id/tv_salary"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Salary"
+                    android:gravity="center"
+                    android:background="@color/white"
+                    android:textColor="#807D7D"
+                    android:textStyle="italic"
+                    android:textSize="20dp"
+                    android:padding="5dp"/>
+        <TextView
+            android:id="@+id/tv_age"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Age"
+            android:gravity="center"
+            android:background="@color/white"
+            android:textColor="#807D7D"
+            android:textStyle="italic"
+            android:textSize="20dp"
+            android:padding="5dp"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
+
+</FrameLayout>
